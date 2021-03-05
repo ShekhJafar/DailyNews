@@ -1,0 +1,24 @@
+.slider-container{
+    display: flex;
+    overflow: hidden;
+    width: 80vw;
+    margin-left:100px;
+    margin-right: 100px;
+    
+}
+.slider-container .articles-container{
+    flex-wrap: nowrap;
+    justify-content: unset;
+    animation: slide 30s linear infinite; 
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+     transform: translateX(-5800px);   
+    }
+}
+.slider-container .articles-container:hover{
+    animation-play-state: paused;
+}
