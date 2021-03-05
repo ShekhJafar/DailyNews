@@ -38,7 +38,7 @@ class DailyNews extends Component {
     }
     render() {
         const FetchNewsPosts = (url, statekey, isHome, HomeKey) => {
-            fetch(`https://newsapi.org/v2/${url}&apiKey=b02daf4fea814cb4861cb42eef0a2010`)
+            fetch(`https://newsapi.org/v2/${url}&apiKey=enter your key here`)
                 .then(response => response.json())
                 .then(art => {
                     if (isHome) {
